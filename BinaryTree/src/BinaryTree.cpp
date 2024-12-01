@@ -137,8 +137,6 @@ void InOrderTraverse(BiTree T) {
 		if (p) {
 			Push(&S, p);
 			p = p->lchild;
-		}
-		else {
 			BiNode* q;
 			Pop(&S, &q);
 			printf("%c ", q->data);
