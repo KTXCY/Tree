@@ -1,16 +1,17 @@
 #pragma once
+
 #include "BiTreeSqStack.h"
 
 typedef struct SqQueue {
-	BiNode* data[MAXSIZE];
-	int front;
-	int rear;
-}SqQueue;
+    BiNode* data[MAXSIZE];
+    int front;
+    int rear;
+} SqQueue;
 
-void InitQueue(SqQueue* );
+void InitQueue(SqQueue* qu);
 
-bool QueueEmpty(SqQueue );
+bool QueueEmpty(SqQueue qu);
 
-bool enQueue(SqQueue*, BiTree);
+bool enQueue(SqQueue* qu, BiTree node);
 
-bool deQueue(SqQueue* , BiTree*);
+bool deQueue(SqQueue* qu, BiTree* node);
